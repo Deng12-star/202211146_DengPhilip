@@ -15,6 +15,20 @@ body {
   min-height: 100vh;
 }
 
+/* Background for auth pages (sign in / login / teach) */
+body.auth {
+  background: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat fixed;
+}
+
+body.auth::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.64);
+  pointer-events: none;
+  mix-blend-mode: lighten;
+}
+
 header {
   background: rgba(255, 255, 255, 0.85);
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
