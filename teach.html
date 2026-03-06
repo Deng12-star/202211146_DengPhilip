@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teach with us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="teach.html" class="active">Teach with us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Teach with us</h1>
+        <div class="form-container">
+          <p>Share your knowledge by creating a course. Send us an email at <a href="mailto:hello@example.com">hello@example.com</a> and we’ll get you set up.</p>
+          <p>Or, if you already have content ready, submit it using the form below.</p>
+          <form>
+              <div class="form-group">
+                  <label for="fullname">Full name</label>
+                  <input type="text" id="fullname" name="fullname" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="exp">Teaching experience</label>
+                  <input type="text" id="exp" name="exp">
+              </div>
+              <div class="form-group">
+                  <label for="qual">Qualifications</label>
+                  <input type="text" id="qual" name="qual">
+              </div>
+              <div class="form-group">
+                  <label for="subject">Subject to teach</label>
+                  <input type="text" id="subject" name="subject">
+              </div>
+              <div class="radio-section">
+                  <p>Preferred teaching mode:</p>
+                  <label><input type="radio" name="mode" value="Online"> Online</label><br>
+                  <label><input type="radio" name="mode" value="In-Person"> In-Person</label>
+              </div>
+              <div class="form-group">
+                  <label for="intro">Introduce yourself</label>
+                  <textarea id="intro" name="intro" rows="2"></textarea>
+              </div>
+              <div class="form-group">
+                  <label for="desc">Brief description</label>
+                  <textarea id="desc" name="desc" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                  <label for="doc">Upload certificate</label>
+                  <input type="file" id="doc" name="doc">
+              </div>
+              <button type="submit" class="button">Submit</button>
+          </form>
+        </div>
+    </div>
+
+<footer>
+  <div class="container" style="text-align:center; padding: 2rem 0 3rem; color: rgba(0,0,0,0.65);">
+    <p>© 2026 ULK.</p>
+  </div>
+</footer>
+
+</body>
+</html>
