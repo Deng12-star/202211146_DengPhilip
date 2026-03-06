@@ -21,9 +21,8 @@
     <div class="container">
         <h1>Teach with us</h1>
         <div class="form-container">
-          <p>Share your knowledge by creating a course. Send us an email at <a href="mailto:hello@example.com">hello@example.com</a> and we’ll get you set up.</p>
-          <p>Or, if you already have content ready, submit it using the form below.</p>
-          <form action="save_teacher.php" method="POST" enctype="multipart/form-data">
+        
+          <form>
               <div class="form-group">
                   <label for="fullname">Full name</label>
                   <input type="text" id="fullname" name="fullname" required>
@@ -45,7 +44,7 @@
                   <input type="text" id="subject" name="subject">
               </div>
               <div class="radio-section">
-                  <p>Preferred teaching mode:</p>
+                  <div class="radio-title">Preferred teaching mode:</div>
                   <label><input type="radio" name="mode" value="Online"> Online</label><br>
                   <label><input type="radio" name="mode" value="In-Person"> In-Person</label>
               </div>
