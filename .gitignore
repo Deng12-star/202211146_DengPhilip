@@ -1,0 +1,17 @@
+# Ignore editor/system files
+.DS_Store
+Thumbs.db
+
+# Ignore Node / Python etc (not used but safe)
+node_modules/
+__pycache__/
+
+# Ignore any build artifacts
+dist/
+build/
+
+# Ignore local environment files
+.env
+
+# Ignore uploads or other user-generated content
+uploads/

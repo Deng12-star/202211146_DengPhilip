@@ -1,0 +1,16 @@
+# Enable pretty URLs for the course demo pages.
+# Example: /course/signup -> /course/signup.php
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /course/
+
+  # If the requested path is not a real file or directory, try to map to a .php file.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(signup|login|teach)/?$ $1.php [L,QSA]
+
+  # Redirect direct .php requests to clean URLs (optional, uncomment to enable)
+  # RewriteCond %{THE_REQUEST} "\s/(signup|login|teach)\.php[\s?]" [NC]
+  # RewriteRule ^(signup|login|teach)\.php$ /course/$1 [R=302,L]
+</IfModule>
